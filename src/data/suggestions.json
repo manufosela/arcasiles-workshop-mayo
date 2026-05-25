@@ -1,0 +1,9 @@
+{
+  "demo-1": [
+    { "clubId": "club-001", "reason": "Encaja con tu interés en literatura latinoamericana y prefieres lecturas en Madrid.", "confidence": 0.92 },
+    { "clubId": "club-013", "reason": "Narrativa hispanoamericana del XXI: alineado con tus géneros preferidos.", "confidence": 0.88 },
+    { "clubId": "club-002", "reason": "Cono Sur poético y narrativo en Madrid presencial, modalidad que aceptas.", "confidence": 0.85 },
+    { "clubId": "club-012", "reason": "Cuento breve latinoamericano online, ideal para semanas con menos tiempo.", "confidence": 0.78 },
+    { "clubId": "club-004", "reason": "Club Borges Virtual: complementa lo presencial con discusiones online quincenales.", "confidence": 0.74 }
+  ]
+}
