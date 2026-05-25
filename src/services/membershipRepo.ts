@@ -1,6 +1,8 @@
 import type { MembershipRequest, RequestStatus } from "../types";
+import seed from "../data/memberships.json";
 
 const STORAGE_KEY = "memberships:current";
+const SEED = seed as MembershipRequest[];
 
 function isBrowser(): boolean {
   return (
@@ -9,9 +11,12 @@ function isBrowser(): boolean {
 }
 
 function loadAll(): MembershipRequest[] {
-  if (!isBrowser()) return [];
+  if (!isBrowser()) return SEED;
   const raw = window.localStorage.getItem(STORAGE_KEY);
-  return raw ? (JSON.parse(raw) as MembershipRequest[]) : [];
+  if (raw) return JSON.parse(raw) as MembershipRequest[];
+  // First load: persist the seed so subsequent writes have a base
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED));
+  return SEED;
 }
 
 function saveAll(items: MembershipRequest[]): void {

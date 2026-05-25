@@ -2,11 +2,75 @@
   { "id": "msg-001", "clubId": "club-001", "authorName": "Lucía", "body": "¿Alguien más se quedó pillado en el capítulo de Melquíades? Lo releí tres veces.", "postedAt": "2026-05-20T18:30:00Z" },
   { "id": "msg-002", "clubId": "club-001", "authorName": "Diego", "body": "El próximo encuentro lo hacemos en la librería La Mistral, mismo horario.", "postedAt": "2026-05-22T10:15:00Z" },
   { "id": "msg-003", "clubId": "club-001", "authorName": "Carmen", "body": "Recomiendo leer también 'El otoño del patriarca' como complemento.", "postedAt": "2026-05-23T20:00:00Z" },
-  { "id": "msg-004", "clubId": "club-002", "authorName": "Roberto", "body": "Bolaño me parece insoportable y a la vez no puedo parar. ¿Alguien más?", "postedAt": "2026-05-19T22:45:00Z" },
-  { "id": "msg-005", "clubId": "club-002", "authorName": "Marina", "body": "Justamente eso es lo bueno. Sigue leyendo.", "postedAt": "2026-05-20T08:00:00Z" },
-  { "id": "msg-006", "clubId": "club-003", "authorName": "Joana", "body": "Para los lusófonos del grupo: traigo edición en portugués del Pessoa.", "postedAt": "2026-05-18T16:20:00Z" },
-  { "id": "msg-007", "clubId": "club-004", "authorName": "Andrés", "body": "Confirmo zoom mañana a las 20h. Tema: Borges y el infinito.", "postedAt": "2026-05-24T12:00:00Z" },
-  { "id": "msg-008", "clubId": "club-005", "authorName": "Paula", "body": "¿Y si para el próximo leemos a Gorodischer en vez de Bodoc?", "postedAt": "2026-05-21T19:30:00Z" },
-  { "id": "msg-009", "clubId": "club-013", "authorName": "Iván", "body": "Schweblin nueva en septiembre. Empezamos a planificarlo?", "postedAt": "2026-05-22T15:45:00Z" },
-  { "id": "msg-010", "clubId": "club-012", "authorName": "Sofía", "body": "Cuento de esta semana: 'La continuidad de los parques' de Cortázar.", "postedAt": "2026-05-25T09:00:00Z" }
+  { "id": "msg-004", "clubId": "club-001", "authorName": "Alejandro", "body": "Yo voy a la próxima con dos amigos que se quieren apuntar, ¿hay sitio?", "postedAt": "2026-05-24T09:42:00Z" },
+
+  { "id": "msg-005", "clubId": "club-002", "authorName": "Roberto", "body": "Bolaño me parece insoportable y a la vez no puedo parar. ¿Alguien más?", "postedAt": "2026-05-19T22:45:00Z" },
+  { "id": "msg-006", "clubId": "club-002", "authorName": "Marina", "body": "Justamente eso es lo bueno. Sigue leyendo.", "postedAt": "2026-05-20T08:00:00Z" },
+  { "id": "msg-007", "clubId": "club-002", "authorName": "Pablo", "body": "El bar de la última vez estaba muy ruidoso. ¿Buscamos otro sitio?", "postedAt": "2026-05-22T19:30:00Z" },
+
+  { "id": "msg-008", "clubId": "club-003", "authorName": "Joana", "body": "Para los lusófonos del grupo: traigo edición en portugués del Pessoa.", "postedAt": "2026-05-18T16:20:00Z" },
+  { "id": "msg-009", "clubId": "club-003", "authorName": "Eduardo", "body": "Yo me quedé en la heteronimia. Necesito mapa de personajes 😅", "postedAt": "2026-05-19T11:05:00Z" },
+  { "id": "msg-010", "clubId": "club-003", "authorName": "Sara", "body": "Comparto un PDF con las correspondencias entre Pessoa, Caeiro, Reis y Campos.", "postedAt": "2026-05-20T13:14:00Z" },
+
+  { "id": "msg-011", "clubId": "club-004", "authorName": "Andrés", "body": "Confirmo zoom mañana a las 20h. Tema: Borges y el infinito.", "postedAt": "2026-05-24T12:00:00Z" },
+  { "id": "msg-012", "clubId": "club-004", "authorName": "Valeria", "body": "¿Alguien puede grabar la sesión? Tengo cena familiar y no puedo conectar.", "postedAt": "2026-05-24T13:30:00Z" },
+  { "id": "msg-013", "clubId": "club-004", "authorName": "Mateo", "body": "Yo grabo y subo al Drive del club.", "postedAt": "2026-05-24T14:00:00Z" },
+
+  { "id": "msg-014", "clubId": "club-005", "authorName": "Paula", "body": "¿Y si para el próximo leemos a Gorodischer en vez de Bodoc?", "postedAt": "2026-05-21T19:30:00Z" },
+  { "id": "msg-015", "clubId": "club-005", "authorName": "Iñaki", "body": "Kalpa Imperial es brutal, voto por ese.", "postedAt": "2026-05-21T21:45:00Z" },
+  { "id": "msg-016", "clubId": "club-005", "authorName": "Adriana", "body": "Para los que no la conozcan: cuentos breves, no novela. Perfecto para un mes intenso.", "postedAt": "2026-05-22T08:30:00Z" },
+
+  { "id": "msg-017", "clubId": "club-006", "authorName": "Marta", "body": "El de Padura me ha durado dos noches. Tengo que pararme a digerirlo.", "postedAt": "2026-05-18T23:15:00Z" },
+  { "id": "msg-018", "clubId": "club-006", "authorName": "Jorge", "body": "¿Alguien ha leído ya las novelas de Mario Conde? Recomiendo empezar por 'Paisaje de otoño'.", "postedAt": "2026-05-20T10:00:00Z" },
+  { "id": "msg-019", "clubId": "club-006", "authorName": "Rocío", "body": "Propongo un especial Vázquez Montalbán para el próximo trimestre.", "postedAt": "2026-05-23T17:30:00Z" },
+
+  { "id": "msg-020", "clubId": "club-007", "authorName": "Helena", "body": "Han plantea que el rendimiento ha sustituido a la disciplina. ¿De acuerdo o lo veis exagerado?", "postedAt": "2026-05-21T20:00:00Z" },
+  { "id": "msg-021", "clubId": "club-007", "authorName": "Tomás", "body": "Exagerado no, pero le falta abrazar más el conflicto colectivo. Despentes ese hueco lo cubre.", "postedAt": "2026-05-21T22:18:00Z" },
+  { "id": "msg-022", "clubId": "club-007", "authorName": "Beatriz", "body": "Propongo Carrère para el próximo: 'Una novela rusa'.", "postedAt": "2026-05-22T11:45:00Z" },
+
+  { "id": "msg-023", "clubId": "club-008", "authorName": "Laia", "body": "El próximo lo hacemos en la librería La Calders, Gracia, sábado 18h.", "postedAt": "2026-05-19T12:00:00Z" },
+  { "id": "msg-024", "clubId": "club-008", "authorName": "Nuria", "body": "Cara de Pan me ha incomodado mucho — en el buen sentido.", "postedAt": "2026-05-20T18:30:00Z" },
+  { "id": "msg-025", "clubId": "club-008", "authorName": "Júlia", "body": "Para el siguiente leemos a Ernaux. 'Los años' o 'El acontecimiento'?", "postedAt": "2026-05-23T09:00:00Z" },
+
+  { "id": "msg-026", "clubId": "club-009", "authorName": "Víctor", "body": "Estoy en la mitad de La Quinta Estación. La estructura me ha volado la cabeza.", "postedAt": "2026-05-17T22:30:00Z" },
+  { "id": "msg-027", "clubId": "club-009", "authorName": "Aitana", "body": "Para los Sanderson fans: maratón el sábado de Mistborn. Abierto a no-miembros.", "postedAt": "2026-05-20T16:00:00Z" },
+  { "id": "msg-028", "clubId": "club-009", "authorName": "Hugo", "body": "Le Guin > todo. No discuto. 🙏", "postedAt": "2026-05-22T21:15:00Z" },
+
+  { "id": "msg-029", "clubId": "club-010", "authorName": "Inés", "body": "Recito un poema de Pizarnik en la próxima. Llevo unas semanas obsesionada.", "postedAt": "2026-05-21T19:00:00Z" },
+  { "id": "msg-030", "clubId": "club-010", "authorName": "Manuel", "body": "Yo prefiero Vallejo, pero adelante. Cada uno con su poeta.", "postedAt": "2026-05-22T08:30:00Z" },
+  { "id": "msg-031", "clubId": "club-010", "authorName": "Pilar", "body": "Propongo un especial Lorca en junio coincidiendo con el aniversario.", "postedAt": "2026-05-24T11:00:00Z" },
+
+  { "id": "msg-032", "clubId": "club-011", "authorName": "Ricardo", "body": "Crimen y castigo está mejor en la traducción de Juan López-Morillas, por si alguien duda.", "postedAt": "2026-05-19T20:45:00Z" },
+  { "id": "msg-033", "clubId": "club-011", "authorName": "Marina", "body": "Para los que vienen online: usad el enlace del calendario, no el del chat.", "postedAt": "2026-05-20T09:30:00Z" },
+
+  { "id": "msg-034", "clubId": "club-012", "authorName": "Sofía", "body": "Cuento de esta semana: 'La continuidad de los parques' de Cortázar.", "postedAt": "2026-05-25T09:00:00Z" },
+  { "id": "msg-035", "clubId": "club-012", "authorName": "Diego", "body": "Mi recomendación para la próxima: 'Continuidad' de Schweblin, juego de espejos con Cortázar.", "postedAt": "2026-05-25T10:30:00Z" },
+  { "id": "msg-036", "clubId": "club-012", "authorName": "Lourdes", "body": "¿Cómo es que nadie ha propuesto a Lispector en semanas?", "postedAt": "2026-05-25T14:00:00Z" },
+
+  { "id": "msg-037", "clubId": "club-013", "authorName": "Iván", "body": "Schweblin nueva en septiembre. Empezamos a planificarlo?", "postedAt": "2026-05-22T15:45:00Z" },
+  { "id": "msg-038", "clubId": "club-013", "authorName": "Camila", "body": "Yo me apunto a la coordinación con la editorial para una firma.", "postedAt": "2026-05-23T11:00:00Z" },
+  { "id": "msg-039", "clubId": "club-013", "authorName": "Bruno", "body": "Recomiendo leer Yuri Herrera antes para tener contexto del realismo sucio.", "postedAt": "2026-05-24T16:00:00Z" },
+
+  { "id": "msg-040", "clubId": "club-014", "authorName": "Pedro", "body": "Quedada de hoy queda confirmada en la Tabacalera, sala 3. 19h en punto.", "postedAt": "2026-05-25T08:00:00Z" },
+  { "id": "msg-041", "clubId": "club-014", "authorName": "Bea", "body": "Llevo el libro de Padura y unas notas con preguntas. Sugiero empezar por la primera parte.", "postedAt": "2026-05-25T10:00:00Z" },
+
+  { "id": "msg-042", "clubId": "club-015", "authorName": "Óscar", "body": "Sesión grabada de mayo subida al Drive. Capítulo cuatro de Vallejo.", "postedAt": "2026-05-18T22:00:00Z" },
+  { "id": "msg-043", "clubId": "club-015", "authorName": "Carla", "body": "Para junio: matemáticas. ¿Tegmark o Stewart? Voto Stewart.", "postedAt": "2026-05-21T20:30:00Z" },
+
+  { "id": "msg-044", "clubId": "club-016", "authorName": "Andrea", "body": "Lectura fácil de Cristina Morales nos ha removido a todas. Hablemos largo en la próxima.", "postedAt": "2026-05-22T19:00:00Z" },
+  { "id": "msg-045", "clubId": "club-016", "authorName": "Lucía", "body": "Comparto un texto de Despentes para complementar. PDF en el grupo.", "postedAt": "2026-05-23T09:30:00Z" },
+  { "id": "msg-046", "clubId": "club-016", "authorName": "Olga", "body": "Para junio: Federici, 'Calibán y la bruja'. ¿Lo cogemos?", "postedAt": "2026-05-24T15:00:00Z" },
+
+  { "id": "msg-047", "clubId": "club-017", "authorName": "Iker", "body": "Discrepo con Han: no toda excesiva positividad es violenta. Hablemos.", "postedAt": "2026-05-20T21:00:00Z" },
+  { "id": "msg-048", "clubId": "club-017", "authorName": "Maitane", "body": "El próximo lo hacemos en el café Bilbao, sala arriba. Los online conectáis por meet.", "postedAt": "2026-05-22T18:15:00Z" },
+
+  { "id": "msg-049", "clubId": "club-018", "authorName": "Roberto", "body": "Cuento del lunes: 'Bestiario' de Cortázar. Lo subo a las 21h en punto.", "postedAt": "2026-05-25T07:00:00Z" },
+  { "id": "msg-050", "clubId": "club-018", "authorName": "Inés", "body": "Para los nuevos: lectura individual hasta las 21h, debate por video hasta las 22h.", "postedAt": "2026-05-25T08:30:00Z" },
+
+  { "id": "msg-051", "clubId": "club-019", "authorName": "Eva", "body": "Aira me deja siempre con la sensación de no haber leído lo que creía leer.", "postedAt": "2026-05-21T22:00:00Z" },
+  { "id": "msg-052", "clubId": "club-019", "authorName": "Tomás", "body": "Eso es exactamente Aira. Es una de sus virtudes.", "postedAt": "2026-05-22T09:00:00Z" },
+
+  { "id": "msg-053", "clubId": "club-020", "authorName": "Rosa", "body": "El Albaicín de noche con Lorca leído en voz alta, hay que verlo para entenderlo.", "postedAt": "2026-05-19T22:45:00Z" },
+  { "id": "msg-054", "clubId": "club-020", "authorName": "Antonio", "body": "Propongo Cercas para el próximo. 'Anatomía de un instante'.", "postedAt": "2026-05-21T11:00:00Z" },
+  { "id": "msg-055", "clubId": "club-020", "authorName": "Lola", "body": "Yo voto por Martín Gaite, llevamos meses sin tocarla.", "postedAt": "2026-05-23T16:30:00Z" }
 ]
