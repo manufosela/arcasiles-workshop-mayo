@@ -1,0 +1,64 @@
+---
+import '../styles/globals.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'Clubes de Lectura' } = Astro.props;
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-30 border-b border-[var(--color-dust)] bg-[var(--color-paper)]/95 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 group">
+          <span class="text-2xl">📚</span>
+          <span class="font-serif text-xl font-semibold tracking-tight group-hover:text-[var(--color-reading)] transition-colors">
+            Clubes de Lectura
+          </span>
+        </a>
+        <nav class="flex items-center gap-1 text-sm">
+          <a
+            href="/"
+            class={`px-3 py-2 rounded-md transition-colors ${isActive('/') && path === '/' ? 'bg-[var(--color-reading)] text-white' : 'hover:bg-[var(--color-dust)]'}`}
+          >
+            Directorio
+          </a>
+          <a
+            href="/profile"
+            class={`px-3 py-2 rounded-md transition-colors ${isActive('/profile') ? 'bg-[var(--color-reading)] text-white' : 'hover:bg-[var(--color-dust)]'}`}
+          >
+            Mi perfil
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-[var(--color-dust)] mt-12">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-[var(--color-ink-soft)] flex flex-wrap justify-between gap-2">
+        <span>Demo · Reto B · La Batalla de las IAs</span>
+        <a
+          href="https://github.com/arcasilesgroup/ai-engineering-workshop"
+          target="_blank"
+          rel="noopener"
+          class="hover:text-[var(--color-reading)] transition-colors"
+        >
+          ai-engineering-workshop ↗
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Mi perfil · Clubes de Lectura">
+  <section class="space-y-8 max-w-3xl">
+    <header class="space-y-2">
+      <h1 class="font-serif text-3xl md:text-4xl font-semibold">Mi perfil de lector</h1>
+      <p class="text-[var(--color-ink-soft)]">
+        Configura tus géneros y modalidad preferida. El directorio ajusta sus sugerencias en base a esto.
+      </p>
+    </header>
+
+    <profile-form></profile-form>
+
+    <hr class="border-[var(--color-dust)]" />
+
+    <section class="space-y-3">
+      <h2 class="font-serif text-xl font-semibold">✨ Sugerencias basadas en tu perfil</h2>
+      <ai-suggestions></ai-suggestions>
+    </section>
+  </section>
+</Base>
+
+<script>
+  import '../components/profile-form.lit.ts';
+  import '../components/ai-suggestions.lit.ts';
+</script>

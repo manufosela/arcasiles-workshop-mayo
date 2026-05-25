@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f5efe6;
+  --color-reading: #3d7d5c;
+  --color-reading-dark: #2d5d44;
+  --color-ink: #2a1f1a;
+  --color-ink-soft: #5c4f47;
+  --color-dust: #d8cdbe;
+  --color-error: #b85c5c;
+  --color-accent: #c98a3d;
+
+  --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html, body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Reusable token classes for Lit components (no Tailwind in shadow DOM) */
+:root {
+  --paper: #f5efe6;
+  --reading: #3d7d5c;
+  --reading-dark: #2d5d44;
+  --ink: #2a1f1a;
+  --ink-soft: #5c4f47;
+  --dust: #d8cdbe;
+  --error: #b85c5c;
+  --accent: #c98a3d;
+}

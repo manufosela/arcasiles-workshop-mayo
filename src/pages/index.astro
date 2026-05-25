@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import { clubsRepo } from '../services/clubsRepo';
+
+const allClubs = clubsRepo.listAll();
+const allClubsJSON = JSON.stringify(allClubs);
+---
+
+<Base title="Directorio · Clubes de Lectura">
+  <section class="space-y-6">
+    <header class="space-y-2">
+      <h1 class="font-serif text-3xl md:text-4xl font-semibold text-[var(--color-ink)]">
+        Encuentra tu club de lectura
+      </h1>
+      <p class="text-[var(--color-ink-soft)] max-w-2xl">
+        Filtra por modalidad, temática o ciudad. Tu perfil ajusta automáticamente qué clubs ves primero.
+      </p>
+    </header>
+
+    <ai-suggestions></ai-suggestions>
+
+    <div class="flex items-center gap-2 text-sm">
+      <span class="text-[var(--color-ink-soft)]">Vista:</span>
+      <button
+        id="view-list"
+        type="button"
+        class="px-3 py-1.5 rounded-md border border-[var(--color-dust)] bg-[var(--color-reading)] text-white"
+      >
+        📋 Lista
+      </button>
+      <button
+        id="view-map"
+        type="button"
+        class="px-3 py-1.5 rounded-md border border-[var(--color-dust)] hover:border-[var(--color-reading)] transition-colors"
+      >
+        🗺️ Mapa
+      </button>
+    </div>
+
+    <filter-bar></filter-bar>
+
+    <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+    <div id="map-view" class="hidden">
+      <clubs-map></clubs-map>
+    </div>
+
+    <p id="no-results" class="hidden text-[var(--color-ink-soft)] italic">
+      No hay clubs que coincidan con esos filtros. Prueba aflojar la búsqueda.
+    </p>
+  </section>
+</Base>
+
+<script type="module" define:vars={{ allClubsJSON }}>
+  import '../components/club-card.lit.ts';
+  import '../components/filter-bar.lit.ts';
+  import '../components/clubs-map.lit.ts';
+  import '../components/ai-suggestions.lit.ts';
+
+  const allClubs = JSON.parse(allClubsJSON);
+  const results = document.getElementById('results');
+  const noResults = document.getElementById('no-results');
+  const viewList = document.getElementById('view-list');
+  const viewMap = document.getElementById('view-map');
+  const mapView = document.getElementById('map-view');
+  const listView = results;
+
+  // Set initial clubs prop on filter-bar after upgrade
+  customElements.whenDefined('filter-bar').then(() => {
+    const filterBar = document.querySelector('filter-bar');
+    if (filterBar) filterBar.clubs = allClubs;
+  });
+
+  let currentClubs = allClubs;
+
+  function render(clubs) {
+    currentClubs = clubs;
+    results.innerHTML = '';
+    if (!clubs.length) {
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+      for (const c of clubs) {
+        const card = document.createElement('club-card');
+        card.club = c;
+        results.appendChild(card);
+      }
+    }
+    const filterBar = document.querySelector('filter-bar');
+    const out = filterBar?.shadowRoot?.querySelector('#count-out');
+    if (out) out.textContent = String(clubs.length);
+    customElements.whenDefined('clubs-map').then(() => {
+      const mapEl = document.querySelector('clubs-map');
+      if (mapEl) mapEl.clubs = clubs;
+    });
+  }
+
+  document.addEventListener('filters-changed', (e) => {
+    render(e.detail.clubs);
+  });
+
+  render(allClubs);
+
+  function setView(mode) {
+    if (mode === 'map') {
+      listView.classList.add('hidden');
+      noResults.classList.add('hidden');
+      mapView.classList.remove('hidden');
+      viewMap.classList.add('bg-[var(--color-reading)]', 'text-white');
+      viewList.classList.remove('bg-[var(--color-reading)]', 'text-white');
+    } else {
+      listView.classList.remove('hidden');
+      if (currentClubs.length === 0) noResults.classList.remove('hidden');
+      mapView.classList.add('hidden');
+      viewList.classList.add('bg-[var(--color-reading)]', 'text-white');
+      viewMap.classList.remove('bg-[var(--color-reading)]', 'text-white');
+    }
+  }
+  viewList.addEventListener('click', () => setView('list'));
+  viewMap.addEventListener('click', () => setView('map'));
+</script>

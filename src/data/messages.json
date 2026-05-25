@@ -1,0 +1,12 @@
+[
+  { "id": "msg-001", "clubId": "club-001", "authorName": "Lucía", "body": "¿Alguien más se quedó pillado en el capítulo de Melquíades? Lo releí tres veces.", "postedAt": "2026-05-20T18:30:00Z" },
+  { "id": "msg-002", "clubId": "club-001", "authorName": "Diego", "body": "El próximo encuentro lo hacemos en la librería La Mistral, mismo horario.", "postedAt": "2026-05-22T10:15:00Z" },
+  { "id": "msg-003", "clubId": "club-001", "authorName": "Carmen", "body": "Recomiendo leer también 'El otoño del patriarca' como complemento.", "postedAt": "2026-05-23T20:00:00Z" },
+  { "id": "msg-004", "clubId": "club-002", "authorName": "Roberto", "body": "Bolaño me parece insoportable y a la vez no puedo parar. ¿Alguien más?", "postedAt": "2026-05-19T22:45:00Z" },
+  { "id": "msg-005", "clubId": "club-002", "authorName": "Marina", "body": "Justamente eso es lo bueno. Sigue leyendo.", "postedAt": "2026-05-20T08:00:00Z" },
+  { "id": "msg-006", "clubId": "club-003", "authorName": "Joana", "body": "Para los lusófonos del grupo: traigo edición en portugués del Pessoa.", "postedAt": "2026-05-18T16:20:00Z" },
+  { "id": "msg-007", "clubId": "club-004", "authorName": "Andrés", "body": "Confirmo zoom mañana a las 20h. Tema: Borges y el infinito.", "postedAt": "2026-05-24T12:00:00Z" },
+  { "id": "msg-008", "clubId": "club-005", "authorName": "Paula", "body": "¿Y si para el próximo leemos a Gorodischer en vez de Bodoc?", "postedAt": "2026-05-21T19:30:00Z" },
+  { "id": "msg-009", "clubId": "club-013", "authorName": "Iván", "body": "Schweblin nueva en septiembre. Empezamos a planificarlo?", "postedAt": "2026-05-22T15:45:00Z" },
+  { "id": "msg-010", "clubId": "club-012", "authorName": "Sofía", "body": "Cuento de esta semana: 'La continuidad de los parques' de Cortázar.", "postedAt": "2026-05-25T09:00:00Z" }
+]

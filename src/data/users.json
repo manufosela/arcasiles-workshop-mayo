@@ -1,0 +1,9 @@
+[
+  {
+    "id": "demo-1",
+    "name": "Manu",
+    "preferredGenres": ["literatura latinoamericana", "cuento", "novela"],
+    "modalityPreference": "ambos",
+    "city": "Madrid"
+  }
+]

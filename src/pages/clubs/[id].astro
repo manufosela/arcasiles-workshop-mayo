@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import { clubsRepo } from '../../services/clubsRepo';
+import { booksRepo } from '../../services/booksRepo';
+
+export function getStaticPaths() {
+  return clubsRepo.listAll().map((c) => ({ params: { id: c.id } }));
+}
+
+const { id } = Astro.params;
+const club = clubsRepo.getById(id!);
+if (!club) {
+  return Astro.redirect('/');
+}
+
+const currentBook = club.currentBookId ? booksRepo.getById(club.currentBookId) : undefined;
+const modalityIcon =
+  club.modality === 'online' ? '💻' : club.modality === 'presencial' ? '📍' : '🔄';
+const modalityClass =
+  club.modality === 'online'
+    ? 'bg-emerald-50 text-[var(--color-reading-dark)]'
+    : club.modality === 'presencial'
+      ? 'bg-amber-50 text-[var(--color-accent)]'
+      : 'bg-violet-50 text-violet-700';
+const pastBookIdsCSV = club.pastBookIds.join(',');
+---
+
+<Base title={`${club.name} · Clubes de Lectura`}>
+  <article class="space-y-8">
+    <a href="/" class="inline-flex items-center gap-1 text-sm text-[var(--color-ink-soft)] hover:text-[var(--color-reading)] transition-colors">
+      ← Volver al directorio
+    </a>
+
+    <header class="space-y-4">
+      <div class="flex flex-wrap items-start gap-4 justify-between">
+        <h1 class="font-serif text-3xl md:text-4xl font-semibold leading-tight">{club.name}</h1>
+        <join-button clubid={club.id}></join-button>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class={`inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full ${modalityClass}`}>
+          {modalityIcon} {club.modality}
+        </span>
+        {club.themes.map((t) => (
+          <span class="text-xs px-3 py-1 rounded-full border border-[var(--color-dust)] text-[var(--color-ink-soft)]">
+            {t}
+          </span>
+        ))}
+      </div>
+
+      <p class="text-[var(--color-ink-soft)] leading-relaxed max-w-3xl">{club.description}</p>
+
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        {club.city && (
+          <div>
+            <dt class="text-[var(--color-ink-soft)]">Ubicación</dt>
+            <dd class="font-medium">{club.city}{club.neighborhood ? ` · ${club.neighborhood}` : ''}</dd>
+          </div>
+        )}
+        <div>
+          <dt class="text-[var(--color-ink-soft)]">Frecuencia</dt>
+          <dd class="font-medium">{club.meetingFrequency}</dd>
+        </div>
+        <div>
+          <dt class="text-[var(--color-ink-soft)]">Miembros</dt>
+          <dd class="font-medium">{club.memberCount}</dd>
+        </div>
+        <div>
+          <dt class="text-[var(--color-ink-soft)]">Modalidad</dt>
+          <dd class="font-medium">{club.modality}</dd>
+        </div>
+      </dl>
+    </header>
+
+    {currentBook && (
+      <section class="bg-[var(--color-dust)]/30 border border-[var(--color-dust)] rounded-xl p-5 space-y-2">
+        <h2 class="font-serif text-xl font-semibold">📖 Próxima lectura</h2>
+        <p class="text-lg"><strong>{currentBook.title}</strong> · <em>{currentBook.author}</em>{currentBook.year ? ` (${currentBook.year})` : ''}</p>
+      </section>
+    )}
+
+    <section class="space-y-3">
+      <h2 class="font-serif text-xl font-semibold">📚 Historial con valoraciones</h2>
+      <book-history bookids={pastBookIdsCSV}></book-history>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="font-serif text-xl font-semibold">👥 Miembros activos</h2>
+      <div class="flex flex-wrap gap-3">
+        {club.activeMemberIds.map((mid) => (
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[var(--color-reading)] to-[var(--color-reading-dark)] text-white flex items-center justify-center font-semibold text-sm" title={mid}>
+            {mid.replace('m-', '').slice(-2)}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="font-serif text-xl font-semibold">💬 Foro del club</h2>
+      <club-forum clubid={club.id}></club-forum>
+    </section>
+  </article>
+</Base>
+
+<script>
+  import '../../components/join-button.lit.ts';
+  import '../../components/book-history.lit.ts';
+  import '../../components/club-forum.lit.ts';
+</script>

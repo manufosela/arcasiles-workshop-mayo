@@ -1,0 +1,28 @@
+{
+  "name": "clubes-lectura",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/lit": "^4.3.0",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^5.0.0",
+    "leaflet": "^1.9.4",
+    "lit": "^3.2.1",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0-beta.10",
+    "@types/leaflet": "^1.9.14",
+    "tailwindcss": "^4.0.0-beta.10"
+  }
+}
