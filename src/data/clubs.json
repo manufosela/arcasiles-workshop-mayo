@@ -10,7 +10,7 @@
     "memberCount": 14,
     "description": "Recorremos la literatura del boom y post-boom latinoamericano. Cada quince días en una librería del barrio.",
     "currentBookId": "book-001",
-    "pastBookIds": ["book-002", "book-003", "book-004"],
+    "pastBookIds": ["book-002", "book-003", "book-004", "book-045"],
     "activeMemberIds": ["m-01", "m-02", "m-03", "m-04"],
     "coords": { "lat": 40.4090, "lng": -3.7028 }
   },
@@ -25,7 +25,7 @@
     "memberCount": 9,
     "description": "Lecturas argentinas, chilenas y uruguayas. Cortázar, Bolaño, Lispector, Mistral, Vallejo.",
     "currentBookId": "book-005",
-    "pastBookIds": ["book-006", "book-007"],
+    "pastBookIds": ["book-006", "book-007", "book-027", "book-035"],
     "activeMemberIds": ["m-05", "m-06", "m-07"],
     "coords": { "lat": 40.4258, "lng": -3.7042 }
   },
@@ -40,7 +40,7 @@
     "memberCount": 12,
     "description": "Puente entre Iberia y Latinoamérica. Lecturas en español y portugués.",
     "currentBookId": "book-008",
-    "pastBookIds": ["book-009", "book-010"],
+    "pastBookIds": ["book-009", "book-010", "book-043"],
     "activeMemberIds": ["m-08", "m-09", "m-10"],
     "coords": { "lat": 40.4376, "lng": -3.7048 }
   },
@@ -53,7 +53,7 @@
     "memberCount": 23,
     "description": "Encuentros por videollamada para lectores hispanoamericanos. Foco en Borges, Cortázar y la tradición fantástica.",
     "currentBookId": "book-011",
-    "pastBookIds": ["book-012", "book-013"],
+    "pastBookIds": ["book-012", "book-013", "book-036"],
     "activeMemberIds": ["m-11", "m-12", "m-13", "m-14"]
   },
   {
@@ -67,7 +67,7 @@
     "memberCount": 17,
     "description": "Liliana Bodoc, Angélica Gorodischer, Carlos Yushimito. Encuentros mensuales presenciales y online entre medio.",
     "currentBookId": "book-014",
-    "pastBookIds": ["book-015"],
+    "pastBookIds": ["book-015", "book-023"],
     "activeMemberIds": ["m-15", "m-16", "m-17"],
     "coords": { "lat": 40.4225, "lng": -3.6976 }
   },
@@ -93,9 +93,9 @@
     "themes": ["ensayo", "no ficción", "política"],
     "meetingFrequency": "mensual",
     "memberCount": 31,
-    "description": "Pensadores contemporáneos. Han, Zafón, Sontag, Despentes. Una sesión por libro al mes.",
+    "description": "Pensadores contemporáneos. Han, Sontag, Despentes, Carrère. Una sesión por libro al mes.",
     "currentBookId": "book-019",
-    "pastBookIds": ["book-020"],
+    "pastBookIds": ["book-020", "book-046"],
     "activeMemberIds": ["m-21", "m-22"]
   },
   {
@@ -109,7 +109,7 @@
     "memberCount": 22,
     "description": "Voces femeninas del siglo XXI. Sara Mesa, Almudena Grandes, Vivian Gornick, Annie Ernaux.",
     "currentBookId": "book-021",
-    "pastBookIds": ["book-022"],
+    "pastBookIds": ["book-022", "book-050"],
     "activeMemberIds": ["m-23", "m-24"],
     "coords": { "lat": 41.4036, "lng": 2.1564 }
   },
@@ -136,7 +136,7 @@
     "memberCount": 11,
     "description": "Recital y comentario una vez al mes. Poesía española e hispanoamericana.",
     "currentBookId": "book-025",
-    "pastBookIds": [],
+    "pastBookIds": ["book-007", "book-035"],
     "activeMemberIds": ["m-28", "m-29"],
     "coords": { "lat": 37.3826, "lng": -6.0021 }
   },
@@ -151,7 +151,7 @@
     "memberCount": 16,
     "description": "Un clásico al mes, leído despacio. Dostoyevski, Tolstói, Flaubert, Borges, Onetti.",
     "currentBookId": "book-026",
-    "pastBookIds": ["book-027"],
+    "pastBookIds": ["book-027", "book-032"],
     "activeMemberIds": ["m-30", "m-31"],
     "coords": { "lat": 39.4699, "lng": -0.3763 }
   },
@@ -164,7 +164,7 @@
     "memberCount": 27,
     "description": "Un cuento por semana. Quiroga, Arreola, Monterroso, Lispector, Cortázar, Bolaño, Schweblin.",
     "currentBookId": "book-028",
-    "pastBookIds": ["book-029"],
+    "pastBookIds": ["book-029", "book-013"],
     "activeMemberIds": ["m-32", "m-33", "m-34"]
   },
   {
@@ -176,10 +176,109 @@
     "neighborhood": "Conde Duque",
     "meetingFrequency": "mensual",
     "memberCount": 19,
-    "description": "Narrativa hispanoamericana del siglo XXI. Schweblin, Enríquez, Yuri Herrera, Mariana Enriquez.",
+    "description": "Narrativa hispanoamericana del siglo XXI. Schweblin, Enríquez, Yuri Herrera, Fernanda Melchor.",
     "currentBookId": "book-030",
-    "pastBookIds": ["book-031"],
+    "pastBookIds": ["book-031", "book-028"],
     "activeMemberIds": ["m-35", "m-36"],
     "coords": { "lat": 40.4308, "lng": -3.7113 }
+  },
+  {
+    "id": "club-014",
+    "name": "Tabacalera Negra",
+    "modality": "presencial",
+    "themes": ["novela negra", "policiaca", "thriller"],
+    "city": "Madrid",
+    "neighborhood": "Lavapiés",
+    "meetingFrequency": "quincenal",
+    "memberCount": 21,
+    "description": "Negra contemporánea en la Tabacalera. Reuniones intensas entre cervezas, café y giros de trama.",
+    "currentBookId": "book-016",
+    "pastBookIds": ["book-017", "book-018", "book-029"],
+    "activeMemberIds": ["m-37", "m-38", "m-39", "m-40"],
+    "coords": { "lat": 40.4080, "lng": -3.7060 }
+  },
+  {
+    "id": "club-015",
+    "name": "Astrolabio",
+    "modality": "online",
+    "themes": ["divulgación", "ciencia", "ensayo"],
+    "meetingFrequency": "mensual",
+    "memberCount": 38,
+    "description": "Ciencia para humanidades. Física, biología, matemáticas contadas como historias. Sesiones grabadas para revisión.",
+    "currentBookId": "book-049",
+    "pastBookIds": ["book-019"],
+    "activeMemberIds": ["m-41", "m-42", "m-43"]
+  },
+  {
+    "id": "club-016",
+    "name": "Casa de las Mujeres",
+    "modality": "presencial",
+    "themes": ["feminismo", "literatura contemporánea", "ensayo"],
+    "city": "Madrid",
+    "neighborhood": "Tetuán",
+    "meetingFrequency": "quincenal",
+    "memberCount": 26,
+    "description": "Lecturas y debate desde la mirada feminista. Despentes, Lorde, Federici, Morales, Ernaux.",
+    "currentBookId": "book-050",
+    "pastBookIds": ["book-022", "book-021"],
+    "activeMemberIds": ["m-44", "m-45", "m-46"],
+    "coords": { "lat": 40.4607, "lng": -3.7044 }
+  },
+  {
+    "id": "club-017",
+    "name": "Filosofía a las 8",
+    "modality": "hibrido",
+    "themes": ["filosofía", "ensayo", "no ficción"],
+    "city": "Bilbao",
+    "neighborhood": "Casco Viejo",
+    "meetingFrequency": "mensual",
+    "memberCount": 15,
+    "description": "Filosofía contemporánea de jueves por la noche. Han, Sloterdijk, Butler, Despentes. Online para los que no llegan al casco.",
+    "currentBookId": "book-019",
+    "pastBookIds": ["book-020"],
+    "activeMemberIds": ["m-47", "m-48"],
+    "coords": { "lat": 43.2569, "lng": -2.9239 }
+  },
+  {
+    "id": "club-018",
+    "name": "Club de Cuento Online",
+    "modality": "online",
+    "themes": ["cuento", "literatura contemporánea"],
+    "meetingFrequency": "semanal",
+    "memberCount": 33,
+    "description": "Un cuento corto cada lunes a las 21:00. Lectura colectiva, análisis y recomendaciones.",
+    "currentBookId": "book-013",
+    "pastBookIds": ["book-006", "book-028", "book-043"],
+    "activeMemberIds": ["m-49", "m-50", "m-51"]
+  },
+  {
+    "id": "club-019",
+    "name": "Verano de Aira",
+    "modality": "presencial",
+    "themes": ["literatura latinoamericana", "novela", "experimental"],
+    "city": "Madrid",
+    "neighborhood": "Lavapiés",
+    "meetingFrequency": "mensual",
+    "memberCount": 13,
+    "description": "Microclub dedicado a César Aira y la narrativa argentina contemporánea. Cinco libros breves al verano.",
+    "currentBookId": "book-036",
+    "pastBookIds": ["book-038"],
+    "activeMemberIds": ["m-52", "m-53"],
+    "coords": { "lat": 40.4101, "lng": -3.7050 }
+  },
+  {
+    "id": "club-020",
+    "name": "Granada Lee",
+    "modality": "presencial",
+    "themes": ["poesía", "literatura española", "narrativa"],
+    "city": "Granada",
+    "neighborhood": "Albaicín",
+    "meetingFrequency": "quincenal",
+    "memberCount": 17,
+    "description": "Café, té con menta y lecturas con vistas a la Alhambra. Lorca obligatorio una vez al año.",
+    "currentBookId": "book-025",
+    "pastBookIds": ["book-037", "book-040", "book-041"],
+    "activeMemberIds": ["m-54", "m-55", "m-56"],
+    "coords": { "lat": 37.1788, "lng": -3.5915 }
   }
 ]

@@ -4,6 +4,7 @@
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   }

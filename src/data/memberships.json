@@ -1,1 +1,4 @@
-[]
+[
+  { "clubId": "club-001", "userId": "demo-1", "status": "accepted", "requestedAt": "2026-04-12T18:00:00Z" },
+  { "clubId": "club-002", "userId": "demo-1", "status": "pending", "requestedAt": "2026-05-24T11:30:00Z" }
+]

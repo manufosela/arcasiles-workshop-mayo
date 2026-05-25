@@ -38,8 +38,8 @@ export class AISuggestions extends LitElement {
       list-style: none;
       padding: 0;
       margin: 0;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 0.6rem;
     }
     li a {
@@ -51,11 +51,19 @@ export class AISuggestions extends LitElement {
       text-decoration: none;
       color: inherit;
       transition: all 0.15s ease;
+      height: 100%;
+      box-sizing: border-box;
     }
     li a:hover {
       background: white;
       border-color: var(--reading, #3d7d5c);
-      transform: translateX(2px);
+      transform: translateY(-2px);
+    }
+    .more {
+      margin-top: 0.85rem;
+      font-size: 0.8rem;
+      color: var(--ink-soft, #5c4f47);
+      text-align: right;
     }
     .club-name {
       font-family: var(--font-serif, ui-serif, Georgia, serif);
@@ -86,9 +94,10 @@ export class AISuggestions extends LitElement {
 
   render() {
     const me = userRepo.getCurrent();
-    const suggestions = suggestionsRepo.getForUser(me.id);
+    const allSuggestions = suggestionsRepo.getForUser(me.id);
+    const suggestions = allSuggestions.slice(0, 3);
 
-    if (!suggestions.length) {
+    if (!allSuggestions.length) {
       return html`
         <header>
           <span>✨</span>
@@ -126,6 +135,11 @@ export class AISuggestions extends LitElement {
           `;
         })}
       </ul>
+      ${allSuggestions.length > 3
+        ? html`<p class="more">
+            +${allSuggestions.length - 3} sugerencias más en tu perfil.
+          </p>`
+        : ""}
     `;
   }
 }
